@@ -424,10 +424,16 @@ nav li a {
 
 .contact-right ul li {
   color: #000000;
-  padding-bottom: 1em;
-  font-size: 1.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.2em;
   text-align: left;
 }
+
+.contact-right {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
 
 .profile .container {
   display: -webkit-box;
@@ -441,10 +447,10 @@ nav li a {
 }
 
 .interests-section {
-  background-image: url("../images/IMG_20200717_110305.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 300px;
+  background-image: url("../images/InterestsPictures/IMG_20200717_110305.jpg");
+  background-size:cover;
+  /*background-attachment: fixed;*/
+  height: 1000px;
 }
 
 @keyframes slideInFromLeft {
@@ -457,38 +463,38 @@ nav li a {
 }
 
 .myprojects-section .container .left-container ul li.one {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
 }
 
 .myprojects-section .container .left-container ul li.two {
-  animation: 1.2s ease-out 0s 1 slideInFromLeft;
+  animation: 0.6s ease-out 0s 1 slideInFromLeft;
 }
 
 .myprojects-section .container .left-container ul li.three {
-  animation: 1.4s ease-out 0s 1 slideInFromLeft;
+  animation: 0.7s ease-out 0s 1 slideInFromLeft;
 }
 
 .myprojects-section .container .left-container ul li.four {
-  animation: 1.6s ease-out 0s 1 slideInFromLeft;
+  animation: 0.8s ease-out 0s 1 slideInFromLeft;
 }
 
 .myprojects-section .container .left-container ul li.five {
-  animation: 1.8s ease-out 0s 1 slideInFromLeft;
+  animation: 0.9s ease-out 0s 1 slideInFromLeft;
 }
 
 .myprojects-section .container .left-container ul li.six {
-  animation: 2s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .myprojects-section .container .left-container ul li.seven {
-  animation: 2.2s ease-out 0s 1 slideInFromLeft;
+  animation: 1.6s ease-out 0s 1 slideInFromLeft;
 }
 
 .myprojects-section .container .left-container ul li.eight {
-  animation: 2.4s ease-out 0s 1 slideInFromLeft;
+  animation: 1.7s ease-out 0s 1 slideInFromLeft;
 }
 .myprojects-section .container .left-container ul li.nine {
-  animation: 2.6s ease-out 0s 1 slideInFromLeft;
+  animation: 1.8s ease-out 0s 1 slideInFromLeft;
 }
 
 @keyframes slideInFromRight {
@@ -501,13 +507,22 @@ nav li a {
 }
 
 .myprojects-section .container .right-container ul li.one {
-  animation: 1s ease-out 0s 1 slideInFromRight;
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
 }
 .myprojects-section .container .right-container ul li.two {
-  animation: 1.2s ease-out 0s 1 slideInFromRight;
+  animation: 0.6s ease-out 0s 1 slideInFromRight;
 }
 .myprojects-section .container .right-container ul li.three {
-  animation: 1.4s ease-out 0s 1 slideInFromRight;
+  animation: 0.7s ease-out 0s 1 slideInFromRight;
+}
+.myprojects-section .container .right-container ul li.four {
+  animation: 0.8s ease-out 0s 1 slideInFromRight;
+}
+.myprojects-section .container .right-container ul li.five {
+  animation: 0.9s ease-out 0s 1 slideInFromRight;
+}
+.myprojects-section .container .right-container ul li.six {
+  animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
 .skills-section{
@@ -524,6 +539,14 @@ div#tag{
 }
 
 @media only screen and (min-width: 700px) {
+  .contact-right{
+    padding-top: 110px;
+    font-size: 1.2em;
+  }
+}
+
+
+@media only screen and (min-width: 1150px) {
   .mobile-menu,
   .mobile-menu-exit {
     display: none;
@@ -597,6 +620,7 @@ div#tag{
 
   .contact-right{
     padding-top: 110px;
+    font-size: 1.3em;
   }
 
   .profile {
@@ -690,7 +714,9 @@ div#tag{
   div#tag{
     background-color: black;
     position: absolute;
-    left: 10%;
+
+    margin-top: 0px;
+    left: 15%;
     top:96%
   }
 
@@ -782,4 +808,99 @@ div#tag{
     border-radius: 1em;
     list-style-type: none;
   }
+
+  .interests-section .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /*.interests-section  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }*/
+
+  .interests-section .row{
+    position: -webkit-sticky;
+    position: fixed;
+    margin-right: 30px;
+    top: 200px;
+  }
+
+  .interests-section .containerInterests .column{
+    overflow: hidden;
+  }
+
+  .interests-section .containerInterests .row img{
+    transition: 0.5s;
+  }
+  .interests-section .containerInterests .row img:hover{
+    transform: scale(1.3);
+  }
+
+  .content{
+    display: none;
+  }
+
+  .loader{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    background-color: rgb(238, 228, 228);
+  }
+
+  .loader>div{
+    height: 100px;
+    width: 100px;
+    border: 15px solid rgb(8, 8, 8);
+    border-top-color: rgb(228, 216, 228);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+  }
+
+  @keyframes spin {
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+.navbar:before, 
+.navbar:after{
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(60deg, #00ff66, #ff00aa );
+  background-size: 400%;
+  height: calc(100% + 5px);
+  width: calc(100% + 5px);
+  z-index: -1;
+  animation: change 40s linear infinite;
+}
+
+@keyframes change {
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 100% 0;
+  }
+  100%{
+    background-position: 0 0;
+}
+
+  }
+
+  .navbar:after{
+    filter: blur(40px);
+    opacity: .5;
+  }
+
 }

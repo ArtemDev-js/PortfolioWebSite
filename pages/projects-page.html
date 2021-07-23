@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyProjects</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="../css/main.css" />
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="container">
+      <div class="navbar">
+        <div class="container">
         <img
           id="mobile-cta"
           class="mobile-menu"
@@ -42,8 +41,8 @@
             </li>
           </ul>
         </nav>
+        </div>
       </div>
-    </div>
 
     <section class="myprojects-section">
       <div class="container">
@@ -99,31 +98,58 @@
         </div>
 
         <div class="right-container">
-          <h2>Home Projects</h2>
+          <h2>Side Projects</h2>
           <ul>
             <li class="one">
               Internet Shop: ASP.Net Core+Angular(Redis, Bootstrap,
-              Stripe, EF,JWT, MS SQL Server)<a class="projectlinks" href="#"
+              Stripe, EF,JWT, MS SQL Server)<a class="projectlinks" href="#" target="_blank"
                 ><img src="../images/GitHub-Mark-32px.png"
               /></a>
             </li>
             <li class="two">
-              Portfolio WebSite(HTML5, CSS3, Javascript)<a class="projectlinks" href="#"
+              Portfolio WebSite(HTML5, CSS3, Javascript)<a class="projectlinks" href="https://github.com/ArtemDev-js/PortfolioWebSite.git" target="_blank"
               ><img src="../images/GitHub-Mark-32px.png"
             /></a>
             </li>
             <li class="three">
               Internet Shop: ASP.Net Core+Angular(Redis, Bootstrap, Stripe,
-              EF,JWT, MS SQL Server)<a class="projectlinks" href="#"
+              EF,JWT, MS SQL Server)<a class="projectlinks" href="https://github.com/ArtemDev-js/skinet.git" target="_blank"
+              ><img src="../images/GitHub-Mark-32px.png"
+            /></a>
+            </li>
+            <li class="four">
+              Internet Shop: ASP.Net Core+Angular(Redis, Bootstrap, Stripe,
+              EF,JWT, MS SQL Server)<a class="projectlinks" href="https://github.com/ArtemDev-js/skinet.git" target="_blank"
+              ><img src="../images/GitHub-Mark-32px.png"
+            /></a>
+            </li>
+            <li class="five">
+              Internet Shop: ASP.Net Core+Angular(Redis, Bootstrap, Stripe,
+              EF,JWT, MS SQL Server)<a class="projectlinks" href="https://github.com/ArtemDev-js/skinet.git" target="_blank"
+              ><img src="../images/GitHub-Mark-32px.png"
+            /></a>
+            </li>
+            <li class="six">
+              Internet Shop: ASP.Net Core+Angular(Redis, Bootstrap, Stripe,
+              EF,JWT, MS SQL Server)<a class="projectlinks" href="https://github.com/ArtemDev-js/skinet.git" target="_blank"
               ><img src="../images/GitHub-Mark-32px.png"
             /></a>
             </li>
           </ul>
         </div>
+      
         <br style="clear: both" />
       </div>
+  
     </section>
 
+
     <script src="../script.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+      });
+    </script>
   </body>
 </html>

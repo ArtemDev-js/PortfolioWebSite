@@ -5,45 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyInterests</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="container">
-        <img id="mobile-cta" class="mobile-menu" src="../images/menu.png" alt="Open Navigation" />
-  
-        <nav>
-          <img id="mobile-exit" class="mobile-menu-exit" src="../images/exit.svg" alt="Close Navigation" />
-  
-          <ul class="primary-nav">
-            <li><a href="../index.html#"><span>Home</span></a></li>
-            <li><a href="../index.html#Experience">Skillset</a></li>
-            <li><a href="../pages/projects-page.html">Projects</a></li>
-            <li><a href="../pages/interests-page.html">Interests</a></li>
-
-          </ul>
-  
-          <ul class="secondary-nav">
-            <li class="go-contactme-cta">
-              <a href="../index.html#contactMe">Contact Me</a>
-            </li>
-          </ul>
-
-        </nav>
-      </div>
+    <div class="loader">
+      <div></div>
     </div>
+    <div class="content">
+      <div class="navbar">
+        <div class="container">
+          <img
+            id="mobile-cta"
+            class="mobile-menu"
+            src="../images/menu.png"
+            alt="Open Navigation"
+          />
 
-    <section  class="interests-section">
-      <div class="container">
-        <ul>
-          <li>Cycling</li>
-          <li>Hiking</li>
-          <li>Bushcraft</li>
-          <li></li>
-        </ul>
+          <nav>
+            <img
+              id="mobile-exit"
+              class="mobile-menu-exit"
+              src="../images/exit.svg"
+              alt="Close Navigation"
+            />
 
+            <ul class="primary-nav">
+              <li>
+                <a href="../index.html#"><span>Home</span></a>
+              </li>
+              <li><a href="../index.html#Experience">Skillset</a></li>
+              <li><a href="../pages/projects-page.html">Projects</a></li>
+              <li><a href="../pages/interests-page.html">Interests</a></li>
+            </ul>
+
+            <ul class="secondary-nav">
+              <li class="go-contactme-cta">
+                <a href="../index.html#contactMe">Contact Me</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </section>
-    
+
+      <section class="interests-section">
+        <div class="containerInterests">
+          <div class="row">
+            <div class="column">
+              <img
+                src="../images/InterestsPictures/IMG_20191027_134117.jpg"
+                alt="Snow"
+                style="width: 100%"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="../images/InterestsPictures/IMG-20201025-WA0005.jpg"
+                alt="Forest"
+                style="width: 100%"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="../images/InterestsPictures/IMG_20210220_132957.jpg "
+                alt="Mountains"
+                style="width: 100%"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="../images/InterestsPictures/IMG_20210608_204037.jpg"
+                alt="Mountains"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../script.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+      });
+    </script>
   </body>
 </html>

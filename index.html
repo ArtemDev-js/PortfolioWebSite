@@ -12,6 +12,10 @@
   </head>
 
   <body>
+    <div class="loader">
+      <div></div>
+    </div>
+    <div class="content">
     <div class="navbar">
       <div class="container">
         <img
@@ -140,8 +144,15 @@
           </ul>
         </div>
       </div>
+    </div>
     </section>
 
     <script src="script.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+      });
+    </script>
   </body>
 </html>
