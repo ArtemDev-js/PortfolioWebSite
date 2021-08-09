@@ -25,7 +25,7 @@ $(document).ready(function () {
   var settings = {
     entries: entries,
     width: 1000,
-    height: 600,
+    height: 590,
     radius: "65%",
     rediusMin: 75,
     bgDraw: true,
@@ -34,9 +34,9 @@ $(document).ready(function () {
     opacityOut: 0.05,
     opacitySpeed: 6,
     fov: 800,
-    speed: 0.5,
+    speed: 1,
     fontSize: "40",
     fontColor: "rgb(65, 20, 224)",
   };
-  $("#tag").svg3DTagCloud(settings);
+  $("#skills").svg3DTagCloud(settings);
 });
