@@ -10,7 +10,11 @@
   </head>
   <body>
     <div class="loader">
-      <div></div>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
     <div class="content">
       <div class="navbar">
@@ -34,9 +38,9 @@
               <li>
                 <a href="../index.html#"><span>Home</span></a>
               </li>
-              <li><a href="../index.html#Experience">Skillset</a></li>
               <li><a href="../pages/projects-page.html">Projects</a></li>
-              <li><a href="../pages/interests-page.html">Interests</a></li>
+              <li><a href="../index.html#Experience">Skillset</a></li>
+              <li><a href="../pages/interests-page.html">Hobbies</a></li>
             </ul>
 
             <ul class="secondary-nav">
@@ -86,8 +90,8 @@
     <script src="../script.js"></script>
     <script>
       $(window).on("load", function () {
-        $(".loader").fadeOut(1000);
-        $(".content").fadeIn(1000);
+        $(".loader").fadeOut(500);
+        $(".content").fadeIn(500);
       });
     </script>
   </body>

@@ -13,7 +13,11 @@
 
   <body>
     <div class="loader">
-      <div></div>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
     <div class="content">
     <div class="navbar">
@@ -37,9 +41,9 @@
             <li>
               <a href="index.html#aboutMe"><span>AboutMe</span></a>
             </li>
-            <li><a href="index.html#Experience">Skillset</a></li>
             <li><a href="pages/projects-page.html">Projects</a></li>
-            <li><a href="pages/interests-page.html">Interests</a></li>
+            <li><a href="index.html#Experience">Skillset</a></li>
+            <li><a href="pages/interests-page.html">Hobbies</a></li>
           </ul>
 
           <ul class="secondary-nav">
@@ -53,11 +57,13 @@
 
     <section class="profile">
       <div class="container">
+
         <div class="left-col">
           <h2>Hi, I'm <span>Artem</span></h2>
-
           <p class="subhead">RPA Developer</p>
+          <blockquote> "The relationship between technology and people has to change in the future for the better, and RPA is one of the great tools to enable that change "</blockquote>
         </div>
+
         <div class="profileimagediv">
           <a href="index.html#aboutMe"
             ><img
@@ -69,8 +75,12 @@
       </div>
     </section>
 
+    
+
     <section class="skills-section" id="Experience">
-      <div id="skills"></div>
+      <div class="container">
+        <div id="skills"></div>
+      </div>
     </section>
 
     <section class="aboutme-section" id="aboutMe">
@@ -83,17 +93,10 @@
             I’m experienced, self-organized RPA Developer with an expertise in
             Web & Desktop automation with a list of completed projects in
             different technologies. Skilled in UiPath, Blue Prism, WinAutomation
-            , C#, VB.NET, VBA, CSS, HTML, Docker, WEB API, ASP.NET Constantly
+            , C#, VB.NET, VBA, CSS, HTML, WEB API, ASP.NET Constantly
             improving my competences, acquiring new skills and always open for a
             new challenges.
           </blockquote>
-          <ul>
-            <li>English - Professional working proficiency</li>
-            <li>German - Elementary proficiency</li>
-            <li>Polish - Professional working proficiency</li>
-            <li>Russian - Native or bilingual proficiency</li>
-            <li>Ukrainian - Native or bilingual proficiency</li>
-          </ul>
         </div>
       </div>
     </section>
@@ -150,7 +153,7 @@
     <script src="script.js"></script>
     <script>
       $(window).on("load", function () {
-        $(".loader").fadeOut(1000);
+        $(".loader").fadeOut(500);
         $(".content").fadeIn(1000);
       });
     </script>
