@@ -57,6 +57,7 @@ body {
   }
 }
 
+
 .navbar nav li.go-contactme-cta a {
   color: var(--primary-color);
   position:absolute;
@@ -148,8 +149,8 @@ section {
 }
 
 .profile-img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   transition: 0.5s;
@@ -646,6 +647,20 @@ div#skills{
     margin-right: 10px;
     margin-bottom: 0px;
   }
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s;
+  }
+
+  .profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(64, 20, 224, 0.425),
+      0 0 20px rgba(64, 20, 224, 0.425), 0 0 40px rgba(64, 20, 224, 0.425),
+      0 0 60px rgba(64, 20, 224, 0.425);
+  }
 }
 
 
@@ -868,6 +883,7 @@ div#skills{
 
   .myprojects-section .container .left-container {
     margin-right: 20px;
+  
   }
 
   .myprojects-section {
